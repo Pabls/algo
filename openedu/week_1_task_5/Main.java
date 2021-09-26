@@ -25,13 +25,18 @@ class Main {
                     digits[tmpIndex + 1] = tmp;
                     tmpIndex -= 1;
                 }
-                if((tmpIndex + 2) != (j + 1)) {
+                if((tmpIndex + 1) != j) {
                     writer.write("Swap elements at indices " + (tmpIndex + 2) + " and " + (j + 1) + ".");
                     writer.newLine();
                 }
             }
             writer.write("No more swaps needed.");
             writer.close();
+
+
+            for(int i = 0; i < strings.length; i++) {
+                System.out.println(digits[i]);
+            }
         } catch(Exception ex) {
             System.out.println(ex);
         }
